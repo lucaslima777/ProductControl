@@ -70,9 +70,9 @@ android {
 
     flavorDimensions "version"
     productFlavors {
-        matrimon {
+        troppo {
             dimension "version"
-            applicationId 'product.control'
+            applicationId 'product.control.troppo'
             versionCode code
             versionName name
         }
