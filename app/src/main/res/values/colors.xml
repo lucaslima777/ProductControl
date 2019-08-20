@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="gradientCoin_1">#0052D4</color>
+    <color name="gradientCoin_2">#4364F7</color>
+    <color name="gradientCoin_3">#9cecfb</color>
+
+    <array name="gradientTest">
+        <item>@color/gradientCoin_1</item>
+        <item>@color/gradientCoin_2</item>
+        <item>@color/gradientCoin_3</item>
+    </array>
 </resources>
