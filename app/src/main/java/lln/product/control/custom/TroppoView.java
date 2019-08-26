@@ -6,13 +6,16 @@ import android.graphics.Canvas;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Shader;
+import android.util.AttributeSet;
 import android.view.Gravity;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.ArrayRes;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import lln.product.control.R;
@@ -34,6 +37,15 @@ public class TroppoView extends LinearLayout {
         super(context);
     }
 
+    public TroppoView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public TroppoView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+
     {
         evaluator = new ArgbEvaluator();
 
@@ -47,7 +59,7 @@ public class TroppoView extends LinearLayout {
         title = (TextView) findViewById(R.id.textView_title);
         btnAdd = (FloatingActionButton) findViewById(R.id.floatingAction_add);
         btnRemove = (FloatingActionButton) findViewById(R.id.floatingAction_remove);
-        imgProduct = findViewById(R.id.imageView_item);
+        imgProduct = (ImageView) findViewById(R.id.imageView_item);
     }
 
     private void initGradient() {
@@ -82,6 +94,23 @@ public class TroppoView extends LinearLayout {
         }
 
         title.setText(item.getTitle());
+        Glide.with(getContext()).load(jellyIcon(jellyType)).into(imgProduct);
+        invalidate();
+
+        imgProduct.animate()
+                .scaleX(1f).scaleY(1f)
+                .setInterpolator(new AccelerateDecelerateInterpolator())
+                .setDuration(300)
+                .start();
+    }
+
+    public void onScroll(float fraction, TroppoItem oldF, TroppoItem newF) {
+        imgProduct.setScaleX(fraction);
+        imgProduct.setScaleY(fraction);
+        actualGradient = mix(fraction,
+                jellyGradient(newF.getJelly()),
+                jellyGradient(oldF.getJelly()));
+        initGradient();
         invalidate();
     }
 

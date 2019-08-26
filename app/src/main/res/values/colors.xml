@@ -13,4 +13,85 @@
         <item>@color/gradientCoin_2</item>
         <item>@color/gradientCoin_3</item>
     </array>
+
+    <!--colors jam pot-->
+    <color name="color_shadow_pot">#C5C0C0</color>
+    <color name="color_shadow_pot_dark">#AFA8A8</color>
+    <color name="color_shadow_pot_clear">#D5D1D1</color>
+    <color name="color_shadow_pot_clear_detail">#EDEBEB</color>
+
+    <!--colors jam strawberry-->
+    <color name="stramberry_red_dark">#C11107</color>
+    <color name="stramberry_red_clear">#CD3E36</color>
+    <color name="stramberry_red_tie">#EF7F00</color>
+
+    <!--colors jam grape-->
+    <color name="grape_purple_dark">@color/purple_700</color>
+    <color name="grape_purple_clear">@color/purple_500</color>
+    <color name="grape_pink_tie">@color/pink_a700</color>
+
+    <!--colors jam banana-->
+    <color name="banana_dark">@color/amber_700</color>
+    <color name="banana_clear">@color/amber_500</color>
+    <color name="banana_tie">@color/orange_800</color>
+
+    <!--colors jam raspberry-->
+    <color name="raspberry_dark">@color/deep_purple_900</color>
+    <color name="raspberry_clear">@color/deep_purple_700</color>
+    <color name="raspberry_tie">@color/purple_a700</color>
+
+    <!--colors jam orange-->
+    <color name="orange_dark">@color/deep_orange_700</color>
+    <color name="orange_clear">@color/orange_600</color>
+    <color name="orange_tie">@color/red_900</color>
+
+    <!--colors jam red-->
+    <color name="red_dark">@color/red_900</color>
+    <color name="red_clear">@color/red_600</color>
+    <color name="red_tie">@color/red_300</color>
+
+    <!--colors jam pink-->
+    <color name="pink_dark">@color/pink_700</color>
+    <color name="pink_clear">@color/pink_400</color>
+    <color name="pink_tie">@color/pink_900</color>
+
+    <!--colors jam purple-->
+    <color name="purple_dark">@color/deep_purple_600</color>
+    <color name="purple_clear">@color/deep_purple_a700</color>
+    <color name="purple_tie">@color/deep_purple_900</color>
+
+    <!--colors jam blue-->
+    <color name="blue_dark">@color/blue_700</color>
+    <color name="blue_clear">@color/blue_a700</color>
+    <color name="blue_tie">@color/blue_900</color>
+
+    <!--colors jam teal-->
+    <color name="teal_dark">@color/teal_800</color>
+    <color name="teal_clear">@color/teal_500</color>
+    <color name="teal_tie">@color/teal_a700</color>
+
+    <!--colors jam green-->
+    <color name="green_dark">@color/green_700</color>
+    <color name="green_clear">@color/green_400</color>
+    <color name="green_tie">@color/green_900</color>
+
+    <!--colors jam yellow-->
+    <color name="yellow_dark">@color/yellow_700</color>
+    <color name="yellow_clear">@color/yellow_400</color>
+    <color name="yellow_tie">@color/yellow_900</color>
+
+    <!--colors jam amber-->
+    <color name="amber_dark">@color/amber_700</color>
+    <color name="amber_clear">@color/amber_400</color>
+    <color name="amber_tie">@color/amber_900</color>
+
+    <!--colors jam brown-->
+    <color name="brown_dark">@color/brown_700</color>
+    <color name="brown_clear">@color/brown_400</color>
+    <color name="brown_tie">@color/brown_900</color>
+
+    <!--colors jam grey-->
+    <color name="grey_dark">@color/grey_700</color>
+    <color name="grey_clear">@color/grey_500</color>
+    <color name="grey_tie">@color/grey_900</color>
 </resources>
