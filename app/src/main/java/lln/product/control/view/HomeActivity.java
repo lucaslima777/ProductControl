@@ -59,10 +59,17 @@ public class HomeActivity extends AppCompatActivity implements
 
     private List<TroppoItem> getTroppoItem() {
         return Arrays.asList(
-                new TroppoItem("Title 1", R.drawable.ic_launcher_foreground, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_add, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_launcher_background, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_remove, TroppoType.JELLY_1)
+                new TroppoItem("Title 1", R.drawable.ic_jam_amber, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_banana, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_blue, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_grape, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_green, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_grey, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_orange, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_pink, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_purple, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_raspberry, TroppoType.JELLY_1),
+                new TroppoItem("Title 1", R.drawable.ic_jam_brown, TroppoType.JELLY_1)
         );
     }
 
