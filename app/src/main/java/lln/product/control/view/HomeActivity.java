@@ -35,7 +35,6 @@ public class HomeActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_home);
         viewById();
 
-        troppoView = new TroppoView(this);
         troppoItem = getTroppoItem();
 
         for (int i = 0; i < getTroppoItem().size(); i++) {
@@ -59,17 +58,15 @@ public class HomeActivity extends AppCompatActivity implements
 
     private List<TroppoItem> getTroppoItem() {
         return Arrays.asList(
-                new TroppoItem("Title 1", R.drawable.ic_jam_amber, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_banana, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_blue, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_grape, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_green, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_grey, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_orange, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_pink, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_purple, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_raspberry, TroppoType.JELLY_1),
-                new TroppoItem("Title 1", R.drawable.ic_jam_brown, TroppoType.JELLY_1)
+                new TroppoItem("Amber", R.drawable.ic_jam_amber, TroppoType.JELLY_1),
+                new TroppoItem("Strawberry", R.drawable.ic_jam_strawberry, TroppoType.JELLY_2),
+                new TroppoItem("Banana", R.drawable.ic_jam_banana, TroppoType.JELLY_3),
+                new TroppoItem("Limao", R.drawable.ic_jam_green, TroppoType.JELLY_4),
+                new TroppoItem("Yellow", R.drawable.ic_jam_yellow, TroppoType.JELLY_5),
+                new TroppoItem("Uva", R.drawable.ic_jam_grape, TroppoType.JELLY_6),
+                new TroppoItem("Laranja", R.drawable.ic_jam_orange, TroppoType.JELLY_7),
+                new TroppoItem("Blue", R.drawable.ic_jam_blue, TroppoType.JELLY_8),
+                new TroppoItem("Brown", R.drawable.ic_jam_brown, TroppoType.JELLY_9)
         );
     }
 

@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Shader;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -14,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.ArrayRes;
+import androidx.annotation.RequiresApi;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -43,6 +45,11 @@ public class TroppoView extends LinearLayout {
 
     public TroppoView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public TroppoView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
 
@@ -86,6 +93,7 @@ public class TroppoView extends LinearLayout {
     }
 
     public void setItem(TroppoItem item) {
+
         TroppoType jellyType = item.getJelly();
         actualGradient = jellyGradient(jellyType);
 
@@ -96,6 +104,7 @@ public class TroppoView extends LinearLayout {
         title.setText(item.getTitle());
         Glide.with(getContext()).load(jellyIcon(jellyType)).into(imgProduct);
         invalidate();
+        imgProduct.setImageResource(R.drawable.ic_jam_amber);
 
         imgProduct.animate()
                 .scaleX(1f).scaleY(1f)
@@ -136,6 +145,12 @@ public class TroppoView extends LinearLayout {
                 return colors(R.array.gradientTest);
             case JELLY_6:
                 return colors(R.array.gradientTest);
+            case JELLY_7:
+                return colors(R.array.gradientTest);
+            case JELLY_8:
+                return colors(R.array.gradientTest);
+            case JELLY_9:
+                return colors(R.array.gradientTest);
             default:
                 throw new IllegalArgumentException();
         }
@@ -144,17 +159,23 @@ public class TroppoView extends LinearLayout {
     private int jellyIcon(TroppoType jelly) {
         switch (jelly) {
             case JELLY_1:
-                return R.drawable.ic_launcher_background;
+                return R.drawable.ic_jam_strawberry;
             case JELLY_2:
-                return R.drawable.ic_launcher_background;
+                return R.drawable.ic_jam_raspberry;
             case JELLY_3:
-                return R.drawable.ic_launcher_background;
+                return R.drawable.ic_jam_banana;
             case JELLY_4:
-                return R.drawable.ic_launcher_background;
+                return R.drawable.ic_jam_green;
             case JELLY_5:
-                return R.drawable.ic_launcher_background;
+                return R.drawable.ic_jam_yellow;
             case JELLY_6:
-                return R.drawable.ic_launcher_background;
+                return R.drawable.ic_jam_grape;
+            case JELLY_7:
+                return R.drawable.ic_jam_orange;
+            case JELLY_8:
+                return R.drawable.ic_jam_blue;
+            case JELLY_9:
+                return R.drawable.ic_jam_brown;
             default:
                 throw new IllegalArgumentException();
         }
