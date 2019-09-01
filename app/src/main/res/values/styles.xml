@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom" parent="Base.Widget.MaterialComponents.TextInputLayout">
+        <item name="android:theme">
+            @style/ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox
+        </item>
+        <item name="boxCollapsedPaddingTop">0dp</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape</item>
+    </style>
+
 </resources>
