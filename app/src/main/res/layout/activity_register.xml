@@ -102,6 +102,20 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.83" />
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/btnJellyType"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guideline83"
+        app:layout_constraintStart_toStartOf="@id/vertical_guideline17"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/success" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_input_add_name"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom"
