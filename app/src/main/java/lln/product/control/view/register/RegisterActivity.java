@@ -14,11 +14,14 @@ import androidx.appcompat.view.menu.MenuPopupHelper;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.PopupMenu;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 import lln.product.control.R;
 
 public class RegisterActivity extends AppCompatActivity {
 
     private AppCompatButton button;
+    private TextInputEditText editName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         button = findViewById(R.id.btnJellyType);
+        editName = findViewById(R.id.edit_input_add_name);
 
         button.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("RestrictedApi")
