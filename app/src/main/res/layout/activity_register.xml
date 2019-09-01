@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="Cadastro"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline03" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnJellyType"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:drawableEnd="@drawable/menu_ic_jam_brown"
+        android:padding="10dp"
+        android:text="Tipo"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guideline83"
+        app:layout_constraintStart_toStartOf="@id/vertical_guideline17"
+        app:layout_constraintTop_toBottomOf="@id/text_input_add_quantidade" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_guideline03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.17" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/vertical_guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_add_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guideline83"
+        app:layout_constraintStart_toStartOf="@id/vertical_guideline17"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline15">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_input_add_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="text"
+            android:nextFocusDown="@+id/edit_input_add_price"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_add_price"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guideline83"
+        app:layout_constraintStart_toStartOf="@id/vertical_guideline17"
+        app:layout_constraintTop_toBottomOf="@id/text_input_add_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_input_add_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço"
+            android:inputType="number"
+            android:nextFocusDown="@+id/edit_input_add_quantidade"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_add_quantidade"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        app:hintAnimationEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/vertical_guideline83"
+        app:layout_constraintStart_toStartOf="@id/vertical_guideline17"
+        app:layout_constraintTop_toBottomOf="@id/text_input_add_price">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_input_add_quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantidade"
+            android:inputType="number"
+            android:nextFocusDown="@+id/edit_input_login_password"
+            android:singleLine="true"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

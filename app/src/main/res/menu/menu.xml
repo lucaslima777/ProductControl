@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/jelly_blue"
+        android:icon="@drawable/menu_ic_jam_blue"
+        android:title="Azul" />
+
+    <item
+        android:id="@+id/jelly_green"
+        android:icon="@drawable/menu_ic_jam_green"
+        android:title="Verde" />
+
+    <item
+        android:id="@+id/jelly_grey"
+        android:icon="@drawable/menu_ic_jam_grey"
+        android:title="Cinza" />
+
+    <item
+        android:id="@+id/jelly_orange"
+        android:icon="@drawable/menu_ic_jam_orange"
+        android:title="Laranja" />
+
+    <item
+        android:id="@+id/jelly_pink"
+        android:icon="@drawable/menu_ic_jam_pink"
+        android:title="Rosa" />
+
+    <item
+        android:id="@+id/jelly_purple"
+        android:icon="@drawable/menu_ic_jam_purple"
+        android:title="Roxo" />
+
+    <item
+        android:id="@+id/jelly_red"
+        android:icon="@drawable/menu_ic_jam_red"
+        android:title="Vermelho" />
+
+    <item
+        android:id="@+id/jelly_yellow"
+        android:icon="@drawable/menu_ic_jam_yellow"
+        android:title="Amarelo" />
+
+    <item
+        android:id="@+id/jelly_amber"
+        android:icon="@drawable/menu_ic_jam_amber"
+        android:title="Ãmbar" />
+
+    <item
+        android:id="@+id/jelly_brown"
+        android:icon="@drawable/menu_ic_jam_brown"
+        android:title="Castanho" />
+
+
+</menu>
