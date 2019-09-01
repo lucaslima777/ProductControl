@@ -104,7 +104,6 @@ public class TroppoView extends LinearLayout {
         title.setText(item.getTitle());
         Glide.with(getContext()).load(jellyIcon(jellyType)).into(imgProduct);
         invalidate();
-        imgProduct.setImageResource(R.drawable.ic_jam_amber);
 
         imgProduct.animate()
                 .scaleX(1f).scaleY(1f)
@@ -159,9 +158,9 @@ public class TroppoView extends LinearLayout {
     private int jellyIcon(TroppoType jelly) {
         switch (jelly) {
             case JELLY_1:
-                return R.drawable.ic_jam_strawberry;
+                return R.drawable.ic_jam_amber;
             case JELLY_2:
-                return R.drawable.ic_jam_raspberry;
+                return R.drawable.ic_jam_strawberry;
             case JELLY_3:
                 return R.drawable.ic_jam_banana;
             case JELLY_4:
