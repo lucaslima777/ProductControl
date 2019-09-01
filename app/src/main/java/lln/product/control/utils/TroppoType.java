@@ -1,21 +1,31 @@
 package lln.product.control.utils;
 
+import lln.product.control.R;
+
 public enum TroppoType {
 
-    JELLY_1("framboesa"),
-    JELLY_2("morango"),
-    JELLY_3("banana"),
-    JELLY_4("limao"),
-    JELLY_5("manga"),
-    JELLY_6("uva"),
-    JELLY_7("laranja"),
-    JELLY_8("blue"),
-    JELLY_9("brown"),
-    JELLY_10("teal");
+    JELLY_BLUE(R.drawable.ic_jam_blue),
+    JELLY_GREEN(R.drawable.ic_jam_green),
+    JELLY_GREY(R.drawable.ic_jam_grey),
+    JELLY_ORANGE(R.drawable.ic_jam_orange),
+    JELLY_PINK(R.drawable.ic_jam_pink),
+    JELLY_PURPLE(R.drawable.ic_jam_purple),
+    JELLY_RED(R.drawable.ic_jam_red),
+    JELLY_YELLOW(R.drawable.ic_jam_yellow),
+    JELLY_AMBER(R.drawable.ic_jam_amber),
+    JELLY_BROWN(R.drawable.ic_jam_brown);
 
-    private String jellyName;
+    private int jellyDrawable;
 
-    TroppoType(String jellyName) {
-        this.jellyName = jellyName;
+    TroppoType(int jellyDrawable) {
+        this.jellyDrawable = jellyDrawable;
+    }
+
+    public int getJellyDrawable() {
+        return jellyDrawable;
+    }
+
+    public void setJellyDrawable(int jellyDrawable) {
+        this.jellyDrawable = jellyDrawable;
     }
 }
