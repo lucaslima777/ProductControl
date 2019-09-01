@@ -132,23 +132,23 @@ public class TroppoView extends LinearLayout {
 
     private int[] jellyGradient(TroppoType jelly) {
         switch (jelly) {
-            case JELLY_1:
+            case JELLY_BLUE:
                 return colors(R.array.gradientTest);
-            case JELLY_2:
+            case JELLY_GREEN:
                 return colors(R.array.gradientTest);
-            case JELLY_3:
+            case JELLY_GREY:
                 return colors(R.array.gradientTest);
-            case JELLY_4:
+            case JELLY_ORANGE:
                 return colors(R.array.gradientTest);
-            case JELLY_5:
+            case JELLY_PINK:
                 return colors(R.array.gradientTest);
-            case JELLY_6:
+            case JELLY_PURPLE:
                 return colors(R.array.gradientTest);
-            case JELLY_7:
+            case JELLY_RED:
                 return colors(R.array.gradientTest);
-            case JELLY_8:
+            case JELLY_YELLOW:
                 return colors(R.array.gradientTest);
-            case JELLY_9:
+            case JELLY_AMBER:
                 return colors(R.array.gradientTest);
             default:
                 throw new IllegalArgumentException();
@@ -157,23 +157,23 @@ public class TroppoView extends LinearLayout {
 
     private int jellyIcon(TroppoType jelly) {
         switch (jelly) {
-            case JELLY_1:
+            case JELLY_BLUE:
                 return R.drawable.ic_jam_amber;
-            case JELLY_2:
+            case JELLY_GREEN:
                 return R.drawable.ic_jam_strawberry;
-            case JELLY_3:
+            case JELLY_GREY:
                 return R.drawable.ic_jam_banana;
-            case JELLY_4:
+            case JELLY_ORANGE:
                 return R.drawable.ic_jam_green;
-            case JELLY_5:
+            case JELLY_PINK:
                 return R.drawable.ic_jam_yellow;
-            case JELLY_6:
+            case JELLY_PURPLE:
                 return R.drawable.ic_jam_grape;
-            case JELLY_7:
+            case JELLY_RED:
                 return R.drawable.ic_jam_orange;
-            case JELLY_8:
+            case JELLY_YELLOW:
                 return R.drawable.ic_jam_blue;
-            case JELLY_9:
+            case JELLY_AMBER:
                 return R.drawable.ic_jam_brown;
             default:
                 throw new IllegalArgumentException();

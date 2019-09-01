@@ -1,4 +1,4 @@
-package lln.product.control.view.adapter;
+package lln.product.control.view.home.adapter;
 
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;

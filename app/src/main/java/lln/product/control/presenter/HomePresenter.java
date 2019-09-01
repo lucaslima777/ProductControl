@@ -5,7 +5,7 @@ import java.util.List;
 import lln.product.control.contract.HomeContract;
 import lln.product.control.interactor.HomeInteractor;
 import lln.product.control.model.TroppoItem;
-import lln.product.control.view.HomeActivity;
+import lln.product.control.view.home.HomeActivity;
 
 public class HomePresenter implements HomeContract.Presenter {
 

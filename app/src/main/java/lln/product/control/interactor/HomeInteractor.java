@@ -22,15 +22,15 @@ public class HomeInteractor implements HomeContract.Interactor {
     public void setTroppoItem() {
 
         troppoItems = Arrays.asList(
-                new TroppoItem("Amber", R.drawable.ic_jam_amber, TroppoType.JELLY_1),
-                new TroppoItem("Strawberry", R.drawable.ic_jam_strawberry, TroppoType.JELLY_2),
-                new TroppoItem("Banana", R.drawable.ic_jam_banana, TroppoType.JELLY_3),
-                new TroppoItem("Limao", R.drawable.ic_jam_green, TroppoType.JELLY_4),
-                new TroppoItem("Yellow", R.drawable.ic_jam_yellow, TroppoType.JELLY_5),
-                new TroppoItem("Uva", R.drawable.ic_jam_grape, TroppoType.JELLY_6),
-                new TroppoItem("Laranja", R.drawable.ic_jam_orange, TroppoType.JELLY_7),
-                new TroppoItem("Blue", R.drawable.ic_jam_blue, TroppoType.JELLY_8),
-                new TroppoItem("Brown", R.drawable.ic_jam_brown, TroppoType.JELLY_9)
+                new TroppoItem("Amber", R.drawable.ic_jam_amber, TroppoType.JELLY_BLUE),
+                new TroppoItem("Strawberry", R.drawable.ic_jam_strawberry, TroppoType.JELLY_GREEN),
+                new TroppoItem("Banana", R.drawable.ic_jam_banana, TroppoType.JELLY_GREY),
+                new TroppoItem("Limao", R.drawable.ic_jam_green, TroppoType.JELLY_ORANGE),
+                new TroppoItem("Yellow", R.drawable.ic_jam_yellow, TroppoType.JELLY_PINK),
+                new TroppoItem("Uva", R.drawable.ic_jam_grape, TroppoType.JELLY_PURPLE),
+                new TroppoItem("Laranja", R.drawable.ic_jam_orange, TroppoType.JELLY_RED),
+                new TroppoItem("Blue", R.drawable.ic_jam_blue, TroppoType.JELLY_YELLOW),
+                new TroppoItem("Brown", R.drawable.ic_jam_brown, TroppoType.JELLY_AMBER)
         );
 
         presenter.onSuccessAddItem(troppoItems);

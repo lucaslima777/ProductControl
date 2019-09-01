@@ -1,4 +1,4 @@
-package lln.product.control.view;
+package lln.product.control.view.home;
 
 import android.os.Bundle;
 
@@ -16,7 +16,7 @@ import lln.product.control.contract.HomeContract;
 import lln.product.control.custom.TroppoView;
 import lln.product.control.model.TroppoItem;
 import lln.product.control.presenter.HomePresenter;
-import lln.product.control.view.adapter.HomeAdapter;
+import lln.product.control.view.home.adapter.HomeAdapter;
 
 public class HomeActivity extends AppCompatActivity implements HomeContract.View {
 
